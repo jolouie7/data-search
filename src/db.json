@@ -1,0 +1,15 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server" },
+    { "id": 2, "title": "json" },
+    { "id": 3, "title": "apple" },
+    { "id": 4, "title": "banana" },
+    { "id": 5, "title": "joseph" },
+    { "id": 6, "title": "juice" },
+    { "id": 7, "title": "my awesome post" },
+    { "id": 8, "title": "chcoclate123" },
+    { "id": 9, "title": "post #2" },
+    { "id": 10, "title": "iphone 1190" },
+    { "id": 11, "title": "RTX 3080, is amazing!" }
+  ]
+}
