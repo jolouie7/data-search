@@ -54,18 +54,19 @@ function App() {
   // } else {
   //   return <h1>loading...</h1>
   // }
+  console.log(posts.results)
 
   const handleChange = (e) => {
     setSearchWord(e.target.value);
 
     if (e.target.value !== "") {
       setFilteredList(
-        data.posts.filter((post) =>
+        posts.results.filter((post) =>
           post.title.toLowerCase().includes(e.target.value)
         )
       );
     } else {
-      setFilteredList(data.posts);
+      setFilteredList(posts.results);
     }
   };
 

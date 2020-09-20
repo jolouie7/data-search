@@ -5,6 +5,7 @@ const Posts = ({posts, loading}) => {
   // const [filteredList, setFilteredList] = useState(data.posts);
   // const [searchWord, setSearchWord] = useState("");
   console.log("posts: ",posts)
+  console.log("posts.results: ",posts.results)
 
   if (loading) {
     return <h1>Loading...</h1>
@@ -40,8 +41,10 @@ const Posts = ({posts, loading}) => {
     // </div>
     <div>
       <ul>
-        { (posts.results).length !== 0 && loading !== true ? (
-          posts.results.map(post => <li>{post.title}</li>)
+        {/* when changing posts to posts.results I would get a new error  */}
+        {/* TypeError: Cannot read property 'length' of undefined */}
+        {(posts.results).length !== 0 && loading !== true ? (
+          posts.results.map((post) => <li>{post.title}</li>)
         ) : (
           <h1>Loading...</h1>
         )}
